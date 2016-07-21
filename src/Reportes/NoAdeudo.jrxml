@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="NoAdeudo" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="257fb064-a0e2-4829-815e-f851ba5ea733">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="303"/>
+	<parameter name="adm" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dia" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="mes" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="year" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="matricul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     personas.`Matricula` AS personas_Matricula,
+     personas.`Carrera` AS personas_Carrera,
+     personas.`Nombres` AS personas_Nombres,
+     personas.`Apellidos` AS personas_Apellidos,
+     personas.`idPersonas` AS personas_idPersonas,
+     usuariosadm.`Nombres` AS usuariosadm_Nombres,
+     usuariosadm.`Apellidos` AS usuariosadm_Apellidos,
+     usuariosadm.`idUsuariosAdm` AS usuariosadm_idUsuariosAdm
+FROM
+     `personas` personas,
+     `usuariosadm` usuariosadm
+WHERE
+     personas.`Matricula` = $P{matricul}
+     and usuariosadm.`idUsuariosAdm` =$P{adm}]]>
+	</queryString>
+	<field name="personas_Matricula" class="java.lang.Integer"/>
+	<field name="personas_Carrera" class="java.lang.String"/>
+	<field name="personas_Nombres" class="java.lang.String"/>
+	<field name="personas_Apellidos" class="java.lang.String"/>
+	<field name="personas_idPersonas" class="java.lang.Integer"/>
+	<field name="usuariosadm_Nombres" class="java.lang.String"/>
+	<field name="usuariosadm_Apellidos" class="java.lang.String"/>
+	<field name="usuariosadm_idUsuariosAdm" class="java.lang.Integer"/>
+	<variable name="MATRICUL" class="java.lang.String"/>
+	<variable name="DIA" class="java.lang.String"/>
+	<variable name="MES" class="java.lang.String"/>
+	<variable name="YEAR" class="java.lang.String"/>
+	<variable name="FIRMANTE" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="af0a2884-5fe5-422f-8b23-dbc7a45bf1b3" x="103" y="45" width="362" height="79"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSIDAD AUTÓNOMA DE GUERRERO
+BIBLIOTECA DE LA UNIDAD ACADÉMICA
+I  N  G  E  N  E  R  I  A
+"SER CULTOS PARA SER LIBRES", JOSÉ MARTI.]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="834759a4-6bd3-4237-b0bc-d12782135372" x="33" y="42" width="67" height="82"/>
+				<imageExpression><![CDATA["C:\\img\\Splash1.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="4423b684-127b-4311-8c36-8d2f6c89b004" x="488" y="45" width="70" height="79"/>
+				<imageExpression><![CDATA["C:\\img\\logoBi.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="97e05a7c-0308-42a2-bca1-57203d20bcba" x="33" y="12" width="190" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[A QUIEN CORRESPONDA:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9a69b70c-625b-4deb-a8e0-0993760618ea" x="34" y="44" width="482" height="61"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="html">
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[<p style=”text-align: justify;”>EL QUE SUSCRIBE, RESPONSABLE DE LA BIBLIOTECA DE LA UNIDAD ACADÉMICA DE INGENIERIA DE LA UNIVERSIDAD AUTÓNOMA DE GUERRERO, POR EL PRESENTE.</p>]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="13e68c08-75ee-408b-8110-58e3a460d9e8" x="34" y="20" width="482" height="43"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" markup="html">
+					<font fontName="Times New Roman" size="28" isBold="true"/>
+				</textElement>
+				<text><![CDATA[H A C E   C O N S T A R]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="397" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3c6203ea-dd2b-4906-aebb-59594381e146" x="8" y="241" width="551" height="28"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ATENTAMENTE]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="c6104b6c-5f00-46e2-9c4c-73751d0b11ea" x="8" y="284" width="551" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usuariosadm_Nombres}.toUpperCase()+" "+$F{usuariosadm_Apellidos}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9fd09362-1421-4f5b-80f2-58d2ddcbf89b" x="465" y="362" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial Black" size="14"/>
+				</textElement>
+				<text><![CDATA[FB-07]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="5507add7-f2c4-4daf-a242-1722be0a6c3c" mode="Transparent" x="34" y="44" width="482" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<p style=”text-align: justify;”>QUE DE ACUERDO A LOS ANTECEDENTES QUE OBRAN EN NUESTRO</p>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5a2f59e6-bc40-4dfc-9e12-d756156744e0" mode="Transparent" x="33" y="62" width="141" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ARCHIVO, EL (A) C."]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="8fa11699-9c42-4e46-973c-822a649b0c7c" x="174" y="79" width="314" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="739164bb-1966-48b7-bd19-3e9dbe82431b" mode="Transparent" x="34" y="80" width="152" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DEL PROGRAMA EDUCATIVO"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="2f96a23e-b939-4088-8e9f-5d32adc5014e" x="158" y="98" width="358" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="338f1cfd-df51-4d41-b54d-cf8308ff6f00" mode="Transparent" x="33" y="99" width="339" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["NO TIENE ADEUDO CON ESTA INSTITUCIÓN."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="91b5337d-bf1e-4618-bb5f-ff83c5aa011a" x="174" y="62" width="314" height="18"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Nombres}.toUpperCase()+" "+$F{personas_Apellidos}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f158c288-2216-4cd8-b911-d17153b36650" x="158" y="81" width="358" height="18"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Carrera}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="84e03e0b-6ecd-4d7a-afd1-2852e0742474" mode="Transparent" x="34" y="132" width="482" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["A PETICIÓN DE LA PARTE INTERESADA Y PARA LOS USOS LEGALES A"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cdfe1b17-a055-4a48-90fc-1f1b49cb3e10" mode="Transparent" x="34" y="150" width="482" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["QUE HAYA LUGAR, SE EXTIENDE LA PRESENTE EN LA CIUDAD DE"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="34de7601-2c81-42f0-a965-0c757bf02124" mode="Transparent" x="34" y="168" width="482" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["CHILPANCINGO, CAPITAL DEL ESTADO DE GUERRERO, A LOS"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1b21d507-1a6e-45e0-9760-34955ab31ee6" mode="Transparent" x="103" y="186" width="131" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DIAS DEL MES DE"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="c4139ee8-1b3d-4f46-839e-ebd06849ca91" x="34" y="203" width="69" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="da09a3d4-35c8-4c3f-a24c-13e2ef392987" x="234" y="202" width="110" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="307aa786-1b9f-4d44-b568-f30cd8df0b5c" x="34" y="186" width="69" height="18"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3934a59e-b115-4fc1-8649-646001d097b2" x="234" y="186" width="110" height="18"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mes}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a900e588-19c9-4503-8cce-b48073729ad3" mode="Transparent" x="344" y="184" width="39" height="18" forecolor="#000000" backcolor="#FFFFFF"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["DEL"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="7f2dbd64-235c-4395-8c04-ef4cd1fcd6cf" x="383" y="202" width="70" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="f1240dae-834e-4414-adfc-166fb799ff5a" x="383" y="186" width="70" height="18"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{year}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6bae1d9a-6273-4823-828b-19ab36ab2577" x="453" y="186" width="12" height="18"/>
+				<textElement textAlignment="Justified" markup="html">
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["."]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Prestamo" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1cd9a23a-42f2-4b8f-90d5-4cd0cd728d95">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idPersonas" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="FechaS" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     detallepersona.`Telefono` AS detallepersona_Telefono,
+     detallepersona.`Semestre` AS detallepersona_Semestre,
+     detallepersona.`Grupo` AS detallepersona_Grupo,
+     detallepersona.`Turno` AS detallepersona_Turno,
+     editorial.`NombreEditorial` AS editorial_NombreEditorial,
+     libro.`Titulo` AS libro_Titulo,
+     libro.`Autor` AS libro_Autor,
+     libro.`SigTopografica` AS libro_SigTopografica,
+     personas.`Matricula` AS personas_Matricula,
+     personas.`Carrera` AS personas_Carrera,
+     personas.`Nombres` AS personas_Nombres,
+     personas.`Apellidos` AS personas_Apellidos,
+     personas.`Direccion` AS personas_Direccion,
+     prestamos.`FechaS` AS prestamos_FechaS,
+     prestamos.`FechaD` AS prestamos_FechaD,
+     usuariosadm.`Nombres` AS usuariosadm_Nombres,
+     usuariosadm.`Apellidos` AS usuariosadm_Apellidos
+FROM
+     `editorial` editorial INNER JOIN `libro` libro ON editorial.`idEditorial` = libro.`IdEditorial`
+     INNER JOIN `prestamos` prestamos ON libro.`IdLibro` = prestamos.`idLibro`
+     INNER JOIN `personas` personas ON prestamos.`idUsuario` = personas.`idPersonas`
+     INNER JOIN `usuariosadm` usuariosadm ON prestamos.`idAdm` = usuariosadm.`idUsuariosAdm`
+     INNER JOIN `detallepersona` detallepersona ON personas.`idPersonas` = detallepersona.`idPersonas`
+WHERE
+     Prestamos.idUsuario = $P{idPersonas} && Prestamos.FechaS=$P{FechaS} && Prestamos.estado='Prestado']]>
+	</queryString>
+	<field name="detallepersona_Telefono" class="java.lang.String"/>
+	<field name="detallepersona_Semestre" class="java.lang.String"/>
+	<field name="detallepersona_Grupo" class="java.lang.String"/>
+	<field name="detallepersona_Turno" class="java.lang.String"/>
+	<field name="editorial_NombreEditorial" class="java.lang.String"/>
+	<field name="libro_Titulo" class="java.lang.String"/>
+	<field name="libro_Autor" class="java.lang.String"/>
+	<field name="libro_SigTopografica" class="java.lang.String"/>
+	<field name="personas_Matricula" class="java.lang.Integer"/>
+	<field name="personas_Carrera" class="java.lang.String"/>
+	<field name="personas_Nombres" class="java.lang.String"/>
+	<field name="personas_Apellidos" class="java.lang.String"/>
+	<field name="personas_Direccion" class="java.lang.String"/>
+	<field name="prestamos_FechaS" class="java.lang.String"/>
+	<field name="prestamos_FechaD" class="java.lang.String"/>
+	<field name="usuariosadm_Nombres" class="java.lang.String"/>
+	<field name="usuariosadm_Apellidos" class="java.lang.String"/>
+	<detail>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="f5a14d2a-9071-4b50-882c-d25f4653bd11" x="64" y="14" width="416" height="32"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Verdana" size="12"/>
+				</textElement>
+				<text><![CDATA[<b>UNIVERSIDAD AUTÓNOMA DE GUERRERO</b><br>
+BIBLIOTECA DE LA UNIDAD ACADÉMICA   I N G E N I E R Í A<br>
+]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="fa723d96-7b07-4e7e-9c13-d56c2f758a57" x="1" y="7" width="63" height="79"/>
+				<imageExpression><![CDATA["C:\\img\\Splash1.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="b644246e-4e88-442d-96da-bb02c70a0ea1" x="491" y="7" width="73" height="79"/>
+				<imageExpression><![CDATA["C:\\img\\logoBi.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="af6bfc5c-b2a4-4df4-9165-54ef6a76e475" x="64" y="46" width="427" height="13"/>
+				<textElement>
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<text><![CDATA[VALE DE PRÉSTAMO MATERIAL BIBLIOHEMEROGRÁFICO Y AUDIOVISUAL. "SER CULTOS PARA SER LIBRES" JOSÉ MARTI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba7e8df9-268a-4788-b450-97a6773ee80b" x="442" y="59" width="39" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FB-01]]></text>
+			</staticText>
+		</band>
+		<band height="263">
+			<staticText>
+				<reportElement uuid="768406bd-8127-4247-b002-5ba338cfc4c2" x="5" y="13" width="124" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[NOMBRE DEL USUARIO:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="870dd6b7-a1a9-45ba-8030-46512f9121a0" x="132" y="31" width="436" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="62bf98a2-72ac-4050-9178-ff9a02c5f8a2" x="4" y="39" width="64" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[DOMICILIO:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="d6dab1f3-45a9-4a61-a481-3658d9d6c0bf" x="73" y="54" width="352" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="4412c1c6-e761-4e6c-b0db-586db86622ed" x="132" y="80" width="118" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="a942f721-8ec2-419e-bf69-c9968d13a610" x="5" y="65" width="127" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[PROGRAMA EDUCATIVO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="762ca76b-cea5-44a4-8697-dd34b9b5d746" x="431" y="35" width="64" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[TELEFONO:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="dd2ca2cf-8293-48bd-b97c-d9050b5a92be" x="495" y="53" width="73" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="63a11f1f-f6ac-473d-86d8-0a97d361bb36" x="252" y="61" width="64" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[SEMESTRE:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="35ce96a7-9ea0-4dd2-9670-9d33b3c499ae" x="316" y="79" width="67" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="a18a7814-6828-49d5-b88c-9402ee62155a" x="429" y="79" width="56" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="ed72f150-efdb-45c6-9d33-9b247a36cd5d" x="383" y="61" width="42" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[GRUPO:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="37e9acb5-c4ae-4563-9dfe-3eaf85b006f4" x="485" y="61" width="46" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[TURNO:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="72845e6a-0d91-4627-8645-080834692d6b" x="524" y="79" width="44" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="3da2e140-dfb8-4de6-bcad-80413f83d633" x="5" y="85" width="108" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[TITULO DE LA OBRA:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="3d00bf3f-cc34-4a8d-b743-757aba3096eb" x="113" y="103" width="455" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="c76c1398-3bce-43f4-a715-44bed0054b41" x="5" y="109" width="150" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[SIGNATURA TOPOGRÁFICA:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="6bf172ca-bd82-48bd-8972-b00d84b0e5ee" x="155" y="127" width="413" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="6ef19be1-2102-4650-b255-e6271804e1fe" x="74" y="150" width="309" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="c9f95294-c42f-4dee-9cad-f8e386fa443f" x="383" y="131" width="64" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[EDITORIAL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cfe48598-fc3c-4846-9b19-dac4021b7a27" x="5" y="135" width="64" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[AUTOR (ES):]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="14990bab-e6ac-4a75-a7ef-90abd2001e74" x="447" y="149" width="122" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="a416f834-76cf-416b-bec2-239b98d53df4" x="97" y="180" width="189" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="dd9ec7c3-85c6-4a09-9285-cb479e2a65ac" x="1" y="165" width="96" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[FECHA DE SALIDA:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="a962fd28-05db-4f00-ad4f-460efcd6ee42" x="410" y="179" width="155" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="40f583a0-5b70-4620-8e43-b717971af8ac" x="286" y="161" width="124" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[FECHA DE DEVOLUCIÓN:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="833bd548-3d0e-49c3-8a6a-0de4dcba8af9" x="4" y="196" width="96" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[FIRMA USUARIO:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="19169eb5-a9fd-4762-a12d-ccd2f34d8755" x="362" y="210" width="206" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="e8ec93f0-1415-466b-99da-44f9f0fea1d5" x="100" y="211" width="189" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="075d13a4-3acb-4856-8677-243047e4d245" x="289" y="192" width="73" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[MATRICULA:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="845459ac-6cc4-4947-aa08-65dad7140f96" x="74" y="240" width="215" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="c2e253d3-9789-4e9c-b93c-6aeddcad29e3" x="4" y="225" width="69" height="20"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Vo. Bo. JEFE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="897c5537-7e8f-4795-a66a-0b6a29ab8ca8" x="293" y="219" width="73" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[BIBLIOT. RESP.:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="e767488e-ee10-413d-bcd2-7f945442008d" x="362" y="239" width="206" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="8f0fb9e8-003b-4120-b809-d6bea499e8e6" x="132" y="12" width="433" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Nombres}.toUpperCase()+" "+$F{personas_Apellidos}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4f7cd1e8-aefa-484a-9371-84568c175735" x="74" y="39" width="351" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Direccion}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1534bf57-4c88-4307-ac51-f6cc2294b7e5" x="496" y="34" width="72" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detallepersona_Telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="86040e3f-6542-47cc-9415-7a47fb711e43" x="136" y="61" width="114" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Carrera}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e695b7f3-b20c-488f-a791-c93a7bbe4db5" x="317" y="61" width="66" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detallepersona_Semestre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b39c8b63-2566-4582-b77f-35b64d7b439d" x="431" y="60" width="55" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detallepersona_Grupo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="21f8332d-6776-4475-924e-434117ef8796" x="524" y="59" width="41" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{detallepersona_Turno}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a0aa7558-d92a-4b0a-b65f-eddcaec34020" x="113" y="85" width="452" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{libro_Titulo}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09070034-1fe6-427b-b63e-3df52ff7fef6" x="155" y="109" width="410" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{libro_SigTopografica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="18747304-a425-446b-a36b-093a9b042156" x="74" y="130" width="309" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{libro_Autor}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0ff7ecbc-2117-4070-99ba-45c8ac9afc33" x="447" y="131" width="121" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{editorial_NombreEditorial}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="59986fe3-bdeb-4ae6-84bd-e2af5afd621a" x="100" y="161" width="186" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prestamos_FechaS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a3e232d8-e68d-44de-9ff8-96d36d4917d2" x="406" y="159" width="159" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prestamos_FechaD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b55e0395-1576-4224-857b-142af9473db6" x="366" y="192" width="202" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Matricula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c097e856-bb43-42dd-9dea-1851543d2897" x="362" y="222" width="203" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usuariosadm_Nombres}.toUpperCase()+" "+$F{usuariosadm_Apellidos}.toUpperCase()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="3bb12e4b-0207-4136-a1f1-7bd8b4b42561" x="4" y="10" width="563" height="41"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTA: En caso de incumplimiento a la fecha de entrega se cancela el préstamo y se hará acreedor a una sanción de  __________________ por libro y por día, el que mutile el Acervo bibliográfico y audiovisual pagará su costo total. EDICIÓN 2015.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+</jasperReport>

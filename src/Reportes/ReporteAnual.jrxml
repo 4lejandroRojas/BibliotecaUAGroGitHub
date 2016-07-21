@@ -1,0 +1,2018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteAnual" pageWidth="754" pageHeight="556" orientation="Landscape" whenNoDataType="BlankPage" columnWidth="754" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="b3ef6faa-4194-4ea9-ae8a-7bf0b3d6347f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="83"/>
+	<property name="ireport.y" value="230"/>
+	<parameter name="ParAño" class="java.lang.String"/>
+	<parameter name="ProfEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ProfTotal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AlumnoTotal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="OtrosTotal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalTotal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="LibrosDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TesisDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CDDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[10]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[20]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetSep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetNov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="InternetDic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAEne" class="java.lang.String">
+		<defaultValueExpression><![CDATA[30]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAFeb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAMar" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAAbr" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAMay" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAJun" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAAgs" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNASep" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNAOct" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNANov" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="CNADic" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PPJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="PExJul" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalProf" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalAlumno" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalOtros" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalLibros" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalTesis" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalPP" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalCD" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalMaterial" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalPrestamo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalInternet" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalCNA" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TotalServicios" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     personas.`idPersonas` AS personas_idPersonas
+FROM
+     `personas` personas where idPersonas='1']]>
+	</queryString>
+	<field name="personas_idPersonas" class="java.lang.Integer"/>
+	<variable name="Total2Ene" class="java.lang.String"/>
+	<title>
+		<band height="104" splitType="Stretch">
+			<image>
+				<reportElement uuid="9fc3e03f-fa0d-44cf-b9d9-81a1bd0fba7a" x="642" y="2" width="104" height="88"/>
+				<imageExpression><![CDATA["C:\\img\\Splash1.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement uuid="78d0ded6-b1b3-4ac4-91e6-17db28ddc4af" x="14" y="2" width="85" height="96"/>
+				<imageExpression><![CDATA["C:\\img\\uagro.jpg"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement uuid="f0119807-53a6-4294-bc2c-98efa62fcf81" x="126" y="2" width="498" height="33"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Arial" size="22" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["UNIVERSIDAD AUTONOMA DE GUERRERO"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="116c20e6-1e02-4225-9241-2f5fb2ea0e2d" x="126" y="28" width="498" height="24"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["COORDINACIÓN GENERAL DE BIBLIOTECAS"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a1c64c01-c435-4d7a-afaf-3c0239e2ed8e" x="126" y="52" width="498" height="24"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["BIBLIOTECA UNIDAD ACÁDEMICA INGENIERÍA"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="390718de-a442-4780-9315-d2cf09241556" x="126" y="76" width="498" height="24"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["REPORTE ESTADISTICO DE USUARIOS Y SERVICIOS"]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="442" splitType="Stretch">
+			<rectangle>
+				<reportElement uuid="ac5cbd69-242c-46fa-80ac-c7ee138f5272" x="12" y="10" width="737" height="392"/>
+			</rectangle>
+			<line>
+				<reportElement uuid="66372b34-6117-43e1-a001-b47c8e8606a0" x="12" y="44" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="66372b34-6117-43e1-a001-b47c8e8606a0" x="12" y="69" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="29f9f6b4-34bb-4518-ae2a-e2c4e677d3dd" x="12" y="94" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="f7777493-4f09-4eb5-8569-ec7622989d55" x="12" y="121" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="58665e25-f9f7-4f19-bdf4-ab121825638a" x="12" y="147" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="0f8933d6-716b-4758-b7d0-1886bf4d434c" x="12" y="174" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="fbc915e6-3070-4d78-8fa6-41195550c98a" x="12" y="199" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="58490574-baaa-48d7-a18a-283fb4481836" x="12" y="226" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="53a4eeca-654f-4c0b-b62d-5d26304c1ab8" x="12" y="252" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="d1c132ce-324a-424d-be4b-a87908fea061" x="13" y="277" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="c8ca107a-f2f5-4148-9441-258ef4f2be97" x="13" y="302" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="fdff416e-149e-4f40-bfe6-d3c22fd17307" x="13" y="329" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="5f4158c6-db4e-4e28-b5d8-bef83769ea6d" x="13" y="355" width="736" height="1"/>
+			</line>
+			<line>
+				<reportElement uuid="5c432bfd-da0a-49c2-be95-27aeec11dd10" x="12" y="380" width="736" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="050d0490-5c3e-469e-9a54-219139ec8eca" x="14" y="46" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4483c145-4468-44a9-ad60-92104da17489" x="15" y="75" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ENE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="694f3ac1-921b-4b0e-8f29-ff278d9c5e9a" x="15" y="102" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FEB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6915a025-32dc-440f-85ac-843411fc37de" x="14" y="128" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[MAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="01b6bb04-c459-4547-8d7e-ecd5daaa8010" x="13" y="154" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ABR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="255efd83-6396-4963-bb07-f7f5742df4b3" x="15" y="180" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[MAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b02fa9d-68cf-4294-8560-ad88e85d4454" x="15" y="206" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[JUN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6cf660b8-79b0-42eb-8bc9-13b42c1190df" x="13" y="232" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[JUL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4946695b-3a47-4b50-b3ef-39722f918da4" x="14" y="258" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AGS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="e37adb56-22e2-4fb4-a6fd-e16a7ee64e9b" x="14" y="284" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[SEP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4ca07c0e-9028-49a4-aea5-13de91cbd345" x="14" y="310" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[OCT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="be3f5b6e-ba80-4bc4-8630-9b5e87e7a684" x="15" y="336" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NOV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d4919da2-94b3-4202-b612-955b97ecbaf9" x="15" y="361" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DIC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6cc2d47d-e292-4059-8fe3-dc7f3bcf016b" x="11" y="382" width="51" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="36ab793c-2a9b-43ff-b578-2b89edc9ea93" x="75" y="46" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PROF.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2cdf5afe-6002-4068-b62d-29f41c1d2950" x="106" y="46" width="46" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ALUMNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f5fa154f-8a22-48a9-a01c-96b0c7f7a066" x="155" y="46" width="42" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OTROS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b253165c-4234-4dbf-8a8b-4b5c9f35906a" x="206" y="46" width="42" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="75492aa8-2761-4391-86bb-c91e6361413d" x="66" y="10" width="1" height="392"/>
+			</line>
+			<line>
+				<reportElement uuid="2d8b8f2f-7c20-4f6e-b7a9-e2beab0744ef" x="105" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="06732488-4b03-4b61-bffc-2ce63105805d" x="151" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="4734a31f-3df3-4d84-8f8f-02ddbf4ad8e6" x="205" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="3029507c-3dfc-4346-90aa-8904f353f24c" x="255" y="12" width="1" height="390"/>
+			</line>
+			<line>
+				<reportElement uuid="749c315e-0cfe-4cb7-95f5-a29fe6dd36df" x="300" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="ac577e5f-a28f-4b4e-ad49-39b19918dd52" x="332" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="596a44a3-9abd-4f24-83ea-bf98776bbdb0" x="355" y="46" width="2" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="122f2bc1-f44d-4100-8eb0-7220a77e6f72" x="397" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="ed1942dd-cec3-403e-a26a-f5576161d775" x="444" y="10" width="1" height="392"/>
+			</line>
+			<line>
+				<reportElement uuid="59ee9ac8-3a55-47bc-8145-dd9765b051d8" x="505" y="46" width="1" height="356"/>
+			</line>
+			<line>
+				<reportElement uuid="a91a354f-a214-4ed5-b5a9-a05d6edc2a19" x="587" y="43" width="1" height="359"/>
+			</line>
+			<line>
+				<reportElement uuid="0647e9b2-847b-4328-b4cb-5cf996253ec4" x="688" y="12" width="1" height="390"/>
+			</line>
+			<staticText>
+				<reportElement uuid="42331423-8a34-4409-9bc1-ac3ffd064614" x="257" y="46" width="43" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LIBROS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="39b548d2-9b34-4110-b6d1-86ef74078b55" x="300" y="46" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TESIS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="741f7824-4376-438e-b41d-b298eea2f484" x="332" y="46" width="23" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[P.P]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2f9a0fdf-b2c3-4285-9cb4-9338d23cc7de" x="355" y="46" width="43" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DISCOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f26bb40c-8a1f-47e2-8eb8-9b4310cfb1a8" x="402" y="46" width="43" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="61fac9d4-e748-4d33-9bec-f24253dfce3e" x="446" y="46" width="60" height="14"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRÉSTAMO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="31cb99ae-69cc-43b7-accd-04eb021a15c8" x="446" y="56" width="60" height="13"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXTERNO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="841b0f68-cf3f-4ee9-ba97-120b715421d7" x="519" y="45" width="60" height="16"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTERNET]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="67f80789-d3fa-4bc1-906f-fff91b5d9ab8" x="593" y="43" width="97" height="16"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONSTANCIA NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="17e5b6ff-5ac8-4d8a-a045-20e19e5cf8ab" x="593" y="56" width="97" height="16"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADEUDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="4acf0ad0-1e90-4f83-9340-08631fc37d27" x="691" y="46" width="57" height="16"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="69b3d822-021a-4529-a4ed-876eeb86b595" x="72" y="74" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6c8412fa-b63a-4333-89b5-095d4dddba78" x="71" y="101" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eeeb11f0-7afb-4f16-8520-ecf3d1a16602" x="71" y="128" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="70e5c3a5-49ec-4e63-873e-85d6d31f627f" x="71" y="155" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="45a681bd-9448-49b8-bc86-c20db9b5abb4" x="71" y="179" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="20ce344f-3603-45ec-b014-4eb49897deb0" x="72" y="206" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd84d5ee-3b90-42d7-a8c6-c5f8a6acc4be" x="72" y="232" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="59ae0dab-2253-4b06-b356-c79a2641044f" x="71" y="253" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="17dbbbd0-b58f-4df6-83b6-1da851028e5c" x="71" y="283" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8548225e-f947-485a-b110-11bd9f10e3ab" x="72" y="309" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bb007585-20b9-48ec-b6f6-d96be4d697c1" x="72" y="335" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd9bc69a-8de7-4f64-b287-0088d302a00a" x="72" y="361" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ProfDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="62f1100d-12df-463a-aea6-4b820d2c7a12" x="110" y="75" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9306c0a1-722d-4e09-81e7-c2523a7f1d68" x="110" y="101" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5c6b8a58-b14f-46b2-9a21-259992dc2d1a" x="110" y="127" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd85d2cd-b0c5-4fe1-84d9-1130b4eea9ff" x="110" y="154" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="57d341d7-3f6f-4bd5-8bc7-bab569d6c6ea" x="110" y="179" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e044e159-b8b6-4196-8e88-c9f29311b450" x="110" y="206" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="954a3e68-59a7-4a58-8fc7-784fcc4b1a9b" x="110" y="232" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b6a8eaf3-5d7f-4b4e-83ef-bd6f060ac9db" x="110" y="258" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="63931d14-45d5-496d-b557-533e79d6b9d9" x="106" y="284" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="19c7f89d-007a-4f8e-bed3-fa109e0cc779" x="110" y="310" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0f799ff1-48e2-4fe7-87c8-d013dedfee2e" x="110" y="335" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9ef7dc8b-1f47-45c2-bde0-56dbf400fe38" x="110" y="356" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AlumnoDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="64e10b8b-2e5f-47ba-b948-4d60425ac966" x="155" y="75" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dc80f19e-60cc-4190-a0a8-ee66875cf4f8" x="152" y="101" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5d91ff3d-be82-45d4-b7f2-28fa52a5e888" x="155" y="127" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6671277a-0535-47e7-b7f2-78089111e064" x="155" y="154" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="107c61da-0e47-4aa1-aba8-54573d8c758a" x="155" y="180" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="84c35c1c-cc91-40f5-a2a7-6b12e2754de9" x="155" y="206" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f0a94f20-929c-406b-8ba0-ec6c182e5712" x="155" y="232" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f0965ee7-c21e-418b-bdea-33feac374f6b" x="155" y="257" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6d29a723-a551-45f5-9f31-242b6123182d" x="155" y="284" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="20bb5714-3eb8-4db3-a601-3a6aefd8339d" x="155" y="310" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="46fff286-9523-4681-bb28-7e392c4486f9" x="155" y="336" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e69c2180-a310-4ebf-b425-99d5d3e0f972" x="155" y="361" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OtrosDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3a3b595f-ea41-4996-a8fb-34a852a544a6" x="207" y="75" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e1cd7225-1966-4995-844e-82b5c58abccd" x="209" y="101" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c755a037-16b2-4ee3-8e18-6f2c648a8d68" x="209" y="127" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="62d9d852-85f1-4baa-b059-eafc7a869c90" x="207" y="180" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a3ebea80-a985-4b53-a3d2-c6705aae5dd9" x="207" y="207" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01746c63-8251-495e-b9c9-fcc10e2cb985" x="206" y="232" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8b2c7639-130c-4c18-94d1-3053082277cf" x="207" y="258" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="332fa2d0-6773-4184-b942-30ac5cff7e80" x="209" y="278" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c456a722-e0bd-4d24-923e-99e57306dbbd" x="209" y="309" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="56ed95fd-480d-4cba-bff3-85484ef6d16e" x="209" y="335" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eb5d1002-a733-4319-93f7-214b64591f75" x="207" y="360" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c9a7692c-ee9b-4ad6-beff-5ca5aa6537bd" x="207" y="154" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ac9582bc-babf-430a-8094-bceabf801fa7" x="262" y="75" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a41528c2-d1a7-4e87-9767-b9cab4bad8a2" x="262" y="101" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7f766270-d3b0-4ace-b2cf-e93a1d8d19be" x="261" y="128" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6a40f9e4-2e1e-4cd2-a528-859f3798f149" x="259" y="154" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="09b56813-2d8c-480b-b392-78dec21b8ec5" x="259" y="180" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9e059b9b-5e75-4d1d-b0bc-68e2c11edc66" x="261" y="206" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1e60d76f-d099-41d5-a9e6-7859dfee4e55" x="261" y="232" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="271756ac-6568-46de-be8d-7d2c24db0086" x="259" y="258" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6851b0ce-95a1-4ea9-869d-768212ffc0d0" x="261" y="282" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9bc43b8a-252b-421e-bc43-36e4fb74e8b8" x="260" y="309" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="edec161e-bdc4-418c-acfa-c7c508d52c71" x="260" y="336" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="24ac8e39-86ef-4c5b-93ff-0f3a6e4c8618" x="261" y="360" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{LibrosDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eb2fe40a-4408-472a-bdc1-7e474a5c59c4" x="301" y="75" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9c487b68-1a32-4e87-b7aa-a5cdf5d02aa3" x="301" y="102" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e49ee5ef-d34e-4c0b-bcdb-3cae17582dbf" x="300" y="127" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="56b65041-0a76-4b9a-96b0-2281d8e2869d" x="300" y="154" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="23c2b1cd-92f2-45af-81e2-bc8c73ef83d4" x="300" y="180" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ed35bfe0-2de0-4747-ae59-f7a9cb99033a" x="301" y="206" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="aeef67ee-1232-40ee-bce8-5775f4721733" x="301" y="232" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d5a73749-aca2-46e6-b198-6cc188f3213c" x="301" y="257" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="13849d06-3a49-41e5-b850-f86d72432fdc" x="301" y="284" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2e9197c3-388d-44be-af10-38fa983a4e0a" x="299" y="310" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="60791c9c-341d-40c2-93d1-a3fbda2d64e8" x="298" y="335" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9503a5dd-a132-4a44-bbb5-33b7ea43e4c6" x="299" y="360" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TesisDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="760427be-134f-4a51-827e-e6698f837f36" x="333" y="75" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1ff41f2a-38de-4ea3-84f6-ad3979907f2c" x="330" y="101" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4deaac42-fa36-4074-bb78-539ecb02b32a" x="333" y="128" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5da34cae-6489-4166-840d-cba8b9d8f87a" x="334" y="154" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9fe05f3a-8092-41c5-85c0-2a407573de92" x="332" y="180" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9c8f13c4-178a-4c90-b521-923964f4852c" x="333" y="207" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ba4f615f-2f2d-4dfe-a7c8-32e8f36ba5c1" x="333" y="232" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="600fedcb-1ed0-4dc0-9ea0-4c8cb4d72270" x="334" y="258" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9647009d-caa1-4145-b611-12f65344a2b2" x="331" y="284" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="eea8ca60-7e9d-4222-9b46-6a32383ea323" x="334" y="309" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c27fbb40-295d-4a91-ae4e-7488dd7d889a" x="332" y="336" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="87fa0d9c-6c32-46ca-af6a-4cd1b4f40e2c" x="332" y="360" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PPDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4a4f0a0e-488d-4aae-bdec-98a0d7cdad5d" x="356" y="74" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="33d3b9d3-ff00-4016-96d1-3e0ae059acfe" x="357" y="102" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a09a4e12-5b5f-40e2-8fa1-609b68e0be95" x="357" y="128" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f5605f4b-d691-400b-9676-7a02170b609b" x="357" y="154" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="84a32cb0-5287-47c2-9f95-922e66f326c7" x="357" y="180" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b6ed64d8-150d-448d-841c-f55289c70899" x="356" y="206" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d9b6411a-7f24-4294-b658-ab9adde9eac1" x="357" y="232" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0eb90d0e-ee39-49fb-a655-a77fdf53cef9" x="357" y="258" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="72188f14-6bdd-4bcd-8ada-9039d6c2b93e" x="357" y="284" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0f3b91d3-a298-4ec3-a392-3f5a0d4de119" x="355" y="310" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ab1fd53f-9253-4bff-b40e-98a211dbabe0" x="355" y="336" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d383750a-cd93-4bf2-a2b6-f2a40a4f52ef" x="357" y="361" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CDDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="29e06b68-7787-4c76-b99e-c906503c6a8f" x="446" y="75" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4e0997ef-8abc-4d66-bcc3-3716c2971157" x="446" y="102" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b27c63d7-3187-4108-95d6-1906de518319" x="445" y="128" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9cdac31c-91c5-45dc-aeff-9fb5acee4981" x="446" y="154" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="264d9ddf-72e6-4d10-b2c3-c1faf88aa97f" x="445" y="180" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="482d0db6-6b82-4335-990b-dc850ee2fc7b" x="445" y="206" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="23e3074f-f1ec-4985-ae19-cf884ba53ce6" x="445" y="232" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f40d6e49-1bd6-4078-8760-c0ef88b0e841" x="447" y="258" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5ffe9ad2-37ae-4e2f-8af1-636c27d854dd" x="447" y="283" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="542e7a5d-a56b-462b-8692-f576c396e2ab" x="446" y="310" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5e5fa80c-2ece-43b0-84c9-896c434d027d" x="447" y="336" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="937b32d3-c1cd-4c18-b18c-331ea97cce7a" x="447" y="361" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{PExDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="03d9d595-1416-4ab2-a89b-442c368f81d5" x="506" y="75" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9b1a6ada-441c-4dc3-8bef-26af87afec96" x="509" y="98" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2e501fb0-08c8-4f4c-bc0e-6ba7cb15dd29" x="505" y="128" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="db43772e-5622-4147-b6f6-be642e3c4138" x="504" y="154" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c76d2948-f9f8-4c0a-bd28-ab3a882ba752" x="505" y="180" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="274af8d1-0311-4756-95dd-80a6c3cefd22" x="506" y="206" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d69d8b7c-4d0f-4db8-a9f3-e07dab14e5cc" x="506" y="232" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="de8865e7-135d-4f33-9440-5d2daff47b01" x="505" y="258" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="47cf804f-de90-4dcb-b4a7-e4bcd715cf47" x="505" y="284" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetSep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3ad88db5-311f-4bc5-9254-bee60d5570f0" x="505" y="310" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="66ed552d-cce6-4bc3-9834-0a44343c94ac" x="505" y="336" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetNov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4c01fa4b-a178-4ceb-8472-f113dd2370ce" x="505" y="361" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{InternetDic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ca5eb8be-b75a-43ba-804d-4ab999ca3587" x="588" y="75" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAEne}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="33e4b375-bfe9-4beb-80cf-cdda9a82bd9c" x="589" y="98" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAFeb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6ca7e186-1a22-4e3b-922a-43b27bcb367a" x="589" y="128" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAMar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="63edab67-7352-4702-9395-b28af8bfbe86" x="588" y="154" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAAbr}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="932bd690-fc85-460c-905e-c6bfd161b454" x="587" y="180" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAMay}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a54b3407-f501-405c-85a4-2f0cf92890b1" x="588" y="206" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAJun}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="248240c3-fc42-4742-8dac-f31c12f43eca" x="590" y="232" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAJul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4c4e3863-b20b-437f-93e8-bdf0b5c14235" x="589" y="258" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAAgs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ae246b29-76c8-4caf-826e-99176f496f89" x="588" y="284" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNASep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="842219da-6374-446c-89b5-d9679c3df9a8" x="590" y="310" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNAOct}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d74d151f-3d12-4e8e-ab0b-f0e9e0dbd40b" x="589" y="361" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNADic}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2d717e76-3a49-47a5-844f-52973cbbccf3" x="587" y="336" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CNANov}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="43c7dfa1-8122-4602-93fe-579eb2481fe9" x="692" y="75" width="54" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExEne})+Integer.parseInt($P{InternetEne})+Integer.parseInt($P{CNAEne})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1c9bf6d6-3fe0-41ba-a0e2-a406afd40d4a" x="691" y="102" width="55" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExFeb})+Integer.parseInt($P{InternetFeb})+Integer.parseInt($P{CNAFeb})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="cd653cb0-9712-42bc-9e8f-0bc4b1fde27c" x="689" y="128" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExMar})+Integer.parseInt($P{InternetMar})+Integer.parseInt($P{CNAMar})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="5251dabe-89bf-4a0e-8fd4-9f8cb93c38f2" x="689" y="154" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExAbr})+Integer.parseInt($P{InternetAbr})+Integer.parseInt($P{CNAAbr})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1396ee12-a2e5-4915-87de-bbff73b7e253" x="692" y="180" width="54" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExMay})+Integer.parseInt($P{InternetMay})+Integer.parseInt($P{CNAMay})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="64e74644-5d4e-4422-bd67-9ca661c3b59d" x="689" y="206" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExJun})+Integer.parseInt($P{InternetJun})+Integer.parseInt($P{CNAJun})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6cea27e8-d4e6-4eff-a8f9-95b773e6d591" x="692" y="232" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExJul})+Integer.parseInt($P{InternetJul})+Integer.parseInt($P{CNAJul})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="39021d62-6a65-4fcd-bd29-0efce19d645c" x="692" y="260" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExAgs})+Integer.parseInt($P{InternetAgs})+Integer.parseInt($P{CNAAgs})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fccf0364-5a05-4996-afe8-0c47151d4fb2" x="692" y="284" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExSep})+Integer.parseInt($P{InternetSep})+Integer.parseInt($P{CNASep})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="66451fbe-55bb-4987-b0bf-617fc7d657f8" x="689" y="310" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExOct})+Integer.parseInt($P{InternetOct})+Integer.parseInt($P{CNAOct})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ee1c0c8d-f8fe-4c42-bed6-ae3139950247" x="691" y="336" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExNov})+Integer.parseInt($P{InternetNov})+Integer.parseInt($P{CNANov})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01ed2a4f-1754-4418-b065-3189ff96e022" x="690" y="361" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{PExDic})+Integer.parseInt($P{InternetDic})+Integer.parseInt($P{CNADic})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="a59d0968-7fcd-4ef7-9600-6c651fe22209" x="396" y="75" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosEne})+Integer.parseInt($P{TesisEne})+Integer.parseInt($P{PPEne})+Integer.parseInt($P{CDEne})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9ca590c2-553e-44c3-af6b-811f51c9506b" x="402" y="102" width="44" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosFeb})+Integer.parseInt($P{TesisFeb})+Integer.parseInt($P{PPFeb})+Integer.parseInt($P{CDFeb})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6fb73f11-3493-4a89-a67c-ecc2ac05d9ce" x="396" y="128" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosMar})+Integer.parseInt($P{TesisMar})+Integer.parseInt($P{PPMar})+Integer.parseInt($P{CDMar})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c5790100-6c3d-4797-9366-9b77f21bffd1" x="398" y="154" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosAbr})+Integer.parseInt($P{TesisAbr})+Integer.parseInt($P{PPAbr})+Integer.parseInt($P{CDAbr})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f83acf12-23e2-41b5-97c9-a37ba2e76b5b" x="402" y="180" width="44" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosMay})+Integer.parseInt($P{TesisMay})+Integer.parseInt($P{PPMay})+Integer.parseInt($P{CDMay})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="fa50bc1d-fde9-46af-8130-dda162fff426" x="397" y="206" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosJun})+Integer.parseInt($P{TesisJun})+Integer.parseInt($P{PPJun})+Integer.parseInt($P{CDJun})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="38ed923b-1d16-40a5-aed8-c27d1021e83a" x="402" y="232" width="44" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosJul})+Integer.parseInt($P{TesisJul})+Integer.parseInt($P{PPJul})+Integer.parseInt($P{CDJul})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b35ef678-b5d2-4cd3-8fbe-0a7e80bf637a" x="402" y="258" width="43" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosAgs})+Integer.parseInt($P{TesisAgs})+Integer.parseInt($P{PPAgs})+Integer.parseInt($P{CDAgs})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="388d84a5-d259-4446-b262-61c952c20471" x="396" y="284" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosSep})+Integer.parseInt($P{TesisSep})+Integer.parseInt($P{PPSep})+Integer.parseInt($P{CDSep})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="89128460-8ffe-4fb6-af95-cec35e433fd7" x="396" y="310" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosOct})+Integer.parseInt($P{TesisOct})+Integer.parseInt($P{PPOct})+Integer.parseInt($P{CDOct})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="188e87de-7ff0-48a3-9fa2-aaf323c99cbe" x="396" y="336" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosNov})+Integer.parseInt($P{TesisNov})+Integer.parseInt($P{PPNov})+Integer.parseInt($P{CDNov})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="577663c0-8612-4096-8e9a-d1202729301b" x="398" y="361" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{LibrosDic})+Integer.parseInt($P{TesisDic})+Integer.parseInt($P{PPDic})+Integer.parseInt($P{CDDic})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="050d0490-5c3e-469e-9a54-219139ec8eca" x="20" y="12" width="37" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AÑO]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="42138dd3-6477-4a07-9c9e-19be794515ea" x="15" y="22" width="48" height="19"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true" isStrikeThrough="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[Integer.parseInt($P{ParAño})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="050d0490-5c3e-469e-9a54-219139ec8eca" x="69" y="15" width="179" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[USUARIOS ATENDIDOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="050d0490-5c3e-469e-9a54-219139ec8eca" x="260" y="15" width="177" height="26"/>
+				<textElement textAlignment="Center" markup="html">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<html><center>MATERIAL<br>BIBLIOHEMEROGRÁFICO<br>CONSULTADOS</center></html>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="050d0490-5c3e-469e-9a54-219139ec8eca" x="447" y="17" width="241" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SERVICIOS PRESTADOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6cc2d47d-e292-4059-8fe3-dc7f3bcf016b" x="12" y="407" width="112" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OBSERVACIONES:]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="300d4f2b-8c10-4baa-842b-9f3b432117ca" x="124" y="421" width="622" height="1"/>
+			</line>
+			<textField>
+				<reportElement uuid="eb5d1002-a733-4319-93f7-214b64591f75" x="204" y="382" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalTotal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="bd9bc69a-8de7-4f64-b287-0088d302a00a" x="71" y="381" width="31" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalProf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9ef7dc8b-1f47-45c2-bde0-56dbf400fe38" x="108" y="380" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalAlumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e69c2180-a310-4ebf-b425-99d5d3e0f972" x="153" y="381" width="50" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalOtros}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="24ac8e39-86ef-4c5b-93ff-0f3a6e4c8618" x="257" y="382" width="39" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalLibros}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="9503a5dd-a132-4a44-bbb5-33b7ea43e4c6" x="302" y="382" width="32" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalTesis}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="87fa0d9c-6c32-46ca-af6a-4cd1b4f40e2c" x="335" y="381" width="22" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalPP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d383750a-cd93-4bf2-a2b6-f2a40a4f52ef" x="356" y="382" width="41" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalCD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="577663c0-8612-4096-8e9a-d1202729301b" x="397" y="382" width="49" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalMaterial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="937b32d3-c1cd-4c18-b18c-331ea97cce7a" x="444" y="381" width="59" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalPrestamo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4c01fa4b-a178-4ceb-8472-f113dd2370ce" x="507" y="383" width="81" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalInternet}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d74d151f-3d12-4e8e-ab0b-f0e9e0dbd40b" x="588" y="380" width="102" height="20"/>
+				<textElement textAlignment="Center" markup="none">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalCNA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="01ed2a4f-1754-4418-b065-3189ff96e022" x="689" y="382" width="57" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalServicios}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

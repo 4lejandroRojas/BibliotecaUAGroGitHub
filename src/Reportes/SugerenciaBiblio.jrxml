@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SugerenciaBiblio" pageWidth="612" pageHeight="792" columnWidth="528" leftMargin="28" rightMargin="56" topMargin="36" bottomMargin="28" uuid="04116064-495c-44ff-a14b-ddcd2fdd8666">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="valormatricula" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AUT1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TIT1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="EDITO1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="EDI1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="AUT2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="EDI2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="EDITO2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="TIT2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ISBN1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="ISBN2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Responsable" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     personas.`Nombres` AS personas_Nombres,
+     personas.`Apellidos` AS personas_Apellidos,
+     personas.`Carrera` AS personas_Carrera,
+     usuariosadm.`Nombres` AS usuariosadm_Nombres,
+     usuariosadm.`Apellidos` AS usuariosadm_Apellidos
+FROM
+     `personas` personas,
+     `usuariosadm` usuariosadm
+WHERE
+     Matricula = $P{valormatricula}
+ AND idUsuariosAdm = $P{Responsable}]]>
+	</queryString>
+	<field name="personas_Nombres" class="java.lang.String"/>
+	<field name="personas_Apellidos" class="java.lang.String"/>
+	<field name="personas_Carrera" class="java.lang.String"/>
+	<field name="usuariosadm_Nombres" class="java.lang.String"/>
+	<field name="usuariosadm_Apellidos" class="java.lang.String"/>
+	<variable name="AUTOR1" class="java.lang.String"/>
+	<variable name="AUTOR2" class="java.lang.String"/>
+	<variable name="TITULO1" class="java.lang.String"/>
+	<variable name="TITULO2" class="java.lang.String"/>
+	<variable name="EDITORIAL1" class="java.lang.String"/>
+	<variable name="EDITORIAL2" class="java.lang.String"/>
+	<variable name="EDICION1" class="java.lang.String"/>
+	<variable name="EDICION2" class="java.lang.String"/>
+	<variable name="ISBN1" class="java.lang.String"/>
+	<variable name="ISBN2" class="java.lang.String"/>
+	<variable name="YEARCURSA" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch">
+			<staticText>
+				<reportElement x="99" y="11" width="362" height="79" uuid="e93da965-c860-4894-a98e-69aaf4c3d07e"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSIDAD AUTÓNOMA DE GUERRERO
+BIBLIOTECA DE LA UNIDAD ACADÉMICA
+I  N  G  E  N  E  R  I  A
+"SER CULTOS PARA SER LIBRES", JOSÉ MARTI.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="458" y="13" width="70" height="79" uuid="f46d0d7f-15ec-45c7-81e9-1a2554e3ae8d"/>
+				<imageExpression><![CDATA["C:\\img\\logoBi.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="10" y="10" width="67" height="82" uuid="4f6757d5-f95f-42ea-b8fd-37f6869b3a1f"/>
+				<imageExpression><![CDATA["C:\\img\\Splash1.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="518" height="35" uuid="46aa818d-039c-4c29-be5c-2a32ff00fe5d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Euphemia" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUGERENCIAS BIBLIOGRÁFICAS PARA ADQUISICIONES
+(TITULACIÓN)]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="472" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="528" height="20" uuid="6dbc10f5-029d-46b1-976d-62ec69ff2e64"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LIBRO 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="33" width="99" height="20" uuid="2532aeb8-77ae-4f16-bb3c-857bfded07e8"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AUTOR (ES):]]></text>
+			</staticText>
+			<line>
+				<reportElement x="127" y="50" width="379" height="3" uuid="d84c5a22-d0bd-4f68-ba9e-038d6c500196"/>
+			</line>
+			<line>
+				<reportElement x="127" y="86" width="379" height="3" uuid="50de51fc-ebcf-4234-bf60-0b65249a0e36"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="69" width="99" height="20" uuid="d56f3f30-ca28-40a3-872b-6c7a17d2b1ee"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TITULO:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="127" y="124" width="93" height="1" uuid="cfdc0330-e8d7-416b-8e01-17600b05493e"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="104" width="99" height="20" uuid="e35b4bde-9dcf-4839-9557-4c4e11d41569"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[EDITORIAL:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="196" width="99" height="20" uuid="066ab351-708b-44ea-ae69-f6be29f59f5d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TITULO:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="124" y="177" width="379" height="3" uuid="caea96b7-da7b-4ff7-9e20-39f388076bbc"/>
+			</line>
+			<staticText>
+				<reportElement x="7" y="135" width="521" height="20" uuid="236f24d6-319c-4f95-8235-5eedad0eb20d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LIBRO 2]]></text>
+			</staticText>
+			<line>
+				<reportElement x="124" y="213" width="379" height="3" uuid="b209036b-ffd5-4af6-8e27-49ef6ef507fb"/>
+			</line>
+			<staticText>
+				<reportElement x="7" y="160" width="99" height="20" uuid="7ba2b093-5866-419f-9b0f-90d716845098"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[AUTOR (ES):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="224" width="99" height="20" uuid="d7ab508a-4159-45d2-bd4c-243f86c4584a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[EDITORIAL:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="120" y="245" width="100" height="1" uuid="23352ced-55cf-4c42-8344-6605a8c79ffb"/>
+			</line>
+			<staticText>
+				<reportElement x="9" y="302" width="99" height="20" uuid="8e054f51-a424-48e3-bcb7-3d1df2309c1e"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CARRERA:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="127" y="297" width="379" height="3" uuid="38509c91-f85a-4d2a-b317-1295a87aec9b"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="260" width="528" height="20" uuid="296cc285-4a17-4ae1-8292-90cca9b9677d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[USUARIO QUE SUGIERE LA ADQUISICIÓN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="126" y="319" width="379" height="3" uuid="c4c9fa78-c648-4bac-948a-55db6c4f596b"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="280" width="99" height="20" uuid="ae04d4b0-b860-47c9-b1b6-1737233b52a2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NOMBRE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="226" y="224" width="71" height="20" uuid="97ff8742-61f2-43ec-9b4c-d28570707273"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Edición y/o año:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="297" y="244" width="55" height="1" uuid="ffe6f7f2-871f-457b-9489-82e4d7560a5b"/>
+			</line>
+			<staticText>
+				<reportElement x="362" y="224" width="30" height="20" uuid="2da9d739-79a6-477c-876e-68c7cad903de"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ISBN:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="405" y="241" width="101" height="1" uuid="5a3042b5-ac7f-4136-b1c3-9ba1e5f1f6eb"/>
+			</line>
+			<textField>
+				<reportElement x="127" y="282" width="374" height="20" uuid="9f509710-473f-4ad8-98c6-4caf604c4471"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Nombres}.toUpperCase()+" "+$F{personas_Apellidos}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="126" y="306" width="371" height="20" uuid="0bd865de-a505-42b4-9b67-7d1c2d54fb6f"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{personas_Carrera}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="30" width="382" height="20" uuid="6294c768-c49d-48da-b899-1bf6c5f710e6"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AUT1}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="66" width="383" height="20" uuid="c64ad1e0-199f-4c1f-90dc-433d6529d0ff"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TIT1}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="104" width="101" height="20" uuid="b905460e-ceeb-4ec3-b24c-6f0bfcef4df4"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EDITO1}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="375" y="105" width="30" height="20" uuid="db35ea87-56c7-458a-bb19-daf4e0276d47"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ISBN:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="308" y="125" width="57" height="1" uuid="9f202a9c-2e59-4634-94f7-b9c866b0d74a"/>
+			</line>
+			<staticText>
+				<reportElement x="237" y="105" width="71" height="20" uuid="18e9f4b6-2379-4a07-b3a4-2fb7e5bb8dd4"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Edición y/o año:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="405" y="122" width="114" height="1" uuid="3d737833-6402-4a1f-b612-c6b7c8150953"/>
+			</line>
+			<textField>
+				<reportElement x="308" y="102" width="54" height="20" uuid="ab37e0c1-b24e-4f71-8a32-96e2c41e2d67"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EDI1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="102" width="101" height="20" uuid="b6f1e0d2-d141-449b-8e37-78beee39b281"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ISBN1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="125" y="157" width="382" height="20" uuid="7d86cd03-2158-429a-a371-6dd777a60bc6"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{AUT2}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="123" y="193" width="383" height="20" uuid="ede0d16d-6a31-4e8e-af23-3f3b1c4abfd3"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TIT2}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="119" y="226" width="101" height="20" uuid="3c04daaf-138b-4a50-85fa-9d5b1e024f32"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EDITO2}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="298" y="226" width="54" height="20" uuid="1373ee4e-1717-4bfa-a722-418119824319"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EDI2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="406" y="224" width="101" height="20" uuid="5358430b-d1c7-4464-9c8b-28f1596902eb"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ISBN2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="340" width="506" height="20" uuid="e99cd98b-3943-4e6d-a82a-10fc16a8be1e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ATENTAMENTE]]></text>
+			</staticText>
+			<line>
+				<reportElement x="123" y="378" width="379" height="3" uuid="cc765e12-05e0-4395-9e95-c3aa7a557c83"/>
+			</line>
+			<staticText>
+				<reportElement x="6" y="361" width="99" height="20" uuid="1401b68b-501e-4482-9abe-eee7d0340cc3"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[RESPONSABLE:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="123" y="363" width="374" height="20" uuid="b3f12eba-ccf3-4c49-b294-f65e5614d732"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{usuariosadm_Nombres}+" "+$F{usuariosadm_Apellidos}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="427" width="99" height="20" uuid="62d41fcc-8de1-44d0-8ca0-2032e662ca5f"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[FIRMA:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="124" y="444" width="379" height="3" uuid="eae0d5c3-70d3-4c01-9484-880c4ebc7b5d"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="327" y="22" width="100" height="20" uuid="eccf629e-b869-425b-8851-f3499464dd7b"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Edición 2015.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="461" y="22" width="55" height="20" uuid="dfee75f7-253c-4647-b100-06e345acb56d"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FB-05]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="35" width="518" height="19" uuid="91586082-7731-4c7a-a899-03703ec5b8c5"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<text><![CDATA[ESTE DOCUMENTO ES OFICIAL, PROPIEDAD DE LA UNIVERSIDAD AUTÓNOMA DE GUERRERO, PROHIBIDA SU REPRODUCCIÓN, COPIA CONTROLADA.  REV. 0]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LibrosCodBarras" columnCount="3" pageWidth="612" pageHeight="792" columnWidth="190" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5c59e7f3-a39a-4033-adc0-1c8ac7253351">
+	<property name="ireport.zoom" value="0.9558924531310702"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idLibro" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     libro.`IdLibro` AS CodigoBarras,
+     libro.`Tipo` AS Tipo,
+     libro.`Titulo` AS Titulo,
+     libro.`Autor` AS Autor,
+     libro.`Edicion` AS Edicion,
+     libro.`Año` AS Año,
+     libro.`Area` AS Area,
+     libro.`Stock` AS Ejemplares
+FROM
+     `libro` libro
+WHERE
+     libro.`IdLibro` =$P{idLibro}]]>
+	</queryString>
+	<field name="CodigoBarras" class="java.lang.Integer"/>
+	<field name="Tipo" class="java.lang.String"/>
+	<field name="Titulo" class="java.lang.String"/>
+	<field name="Autor" class="java.lang.String"/>
+	<field name="Edicion" class="java.lang.Integer"/>
+	<field name="Año" class="java.lang.String"/>
+	<field name="Area" class="java.lang.String"/>
+	<field name="Ejemplares" class="java.lang.Integer"/>
+	<detail>
+		<band height="68">
+			<rectangle>
+				<reportElement uuid="6c962367-da52-4dbe-8ca3-5b95f7ab8747" x="11" y="10" width="161" height="52"/>
+			</rectangle>
+			<componentElement>
+				<reportElement uuid="86d0d0e9-1793-4976-af61-e67fbaf1e9aa" x="12" y="12" width="160" height="50"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" moduleWidth="2.0" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{CodigoBarras}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+			<rectangle>
+				<reportElement uuid="6c962367-da52-4dbe-8ca3-5b95f7ab8747" x="207" y="10" width="161" height="52"/>
+			</rectangle>
+			<componentElement>
+				<reportElement uuid="86d0d0e9-1793-4976-af61-e67fbaf1e9aa" x="208" y="12" width="160" height="50"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" moduleWidth="2.0" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{CodigoBarras}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+			<rectangle>
+				<reportElement uuid="6c962367-da52-4dbe-8ca3-5b95f7ab8747" x="397" y="10" width="161" height="52"/>
+			</rectangle>
+			<componentElement>
+				<reportElement uuid="86d0d0e9-1793-4976-af61-e67fbaf1e9aa" x="398" y="12" width="160" height="50"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" moduleWidth="2.0" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{CodigoBarras}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+		</band>
+		<band height="79">
+			<rectangle>
+				<reportElement uuid="6c962367-da52-4dbe-8ca3-5b95f7ab8747" x="10" y="10" width="161" height="52"/>
+			</rectangle>
+			<componentElement>
+				<reportElement uuid="86d0d0e9-1793-4976-af61-e67fbaf1e9aa" x="11" y="12" width="160" height="50"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" moduleWidth="2.0" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{CodigoBarras}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+			<rectangle>
+				<reportElement uuid="6c962367-da52-4dbe-8ca3-5b95f7ab8747" x="208" y="12" width="161" height="52"/>
+			</rectangle>
+			<componentElement>
+				<reportElement uuid="86d0d0e9-1793-4976-af61-e67fbaf1e9aa" x="209" y="14" width="160" height="50"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" moduleWidth="2.0" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{CodigoBarras}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+			<rectangle>
+				<reportElement uuid="6c962367-da52-4dbe-8ca3-5b95f7ab8747" x="397" y="14" width="161" height="52"/>
+			</rectangle>
+			<componentElement>
+				<reportElement uuid="86d0d0e9-1793-4976-af61-e67fbaf1e9aa" x="398" y="16" width="160" height="50"/>
+				<jr:Code128 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" moduleWidth="2.0" textPosition="bottom">
+					<jr:codeExpression><![CDATA[$F{CodigoBarras}]]></jr:codeExpression>
+				</jr:Code128>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>
